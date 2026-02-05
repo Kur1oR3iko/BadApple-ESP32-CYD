@@ -245,7 +245,7 @@
 // Parallel bus is only supported for the STM32 and ESP32
 // Example below is for ESP32 Parallel interface with UNO displays
 
-// Tell the library to use 8-bit parallel mode (otherwise SPI is assumed)
+// Tell the library to use 8 bit parallel mode (otherwise SPI is assumed)
 //#define TFT_PARALLEL_8_BIT
 
 // The ESP32 and TFT the pins used for testing are:
@@ -356,8 +356,8 @@
 // #define SPI_FREQUENCY  10000000
 // #define SPI_FREQUENCY  20000000
 //#define SPI_FREQUENCY  27000000
-// #define SPI_FREQUENCY  40000000
-#define SPI_FREQUENCY  55000000 // STM32 SPI1 only (SPI2 maximum is 27MHz)
+#define SPI_FREQUENCY  40000000 // Good for ILI9341 on ESP32
+// #define SPI_FREQUENCY  55000000 // STM32 SPI1 only (SPI2 maximum is 27MHz)
 // #define SPI_FREQUENCY  80000000
 
 // Optional reduced SPI frequency for reading TFT
